@@ -4,26 +4,46 @@
 #
 Name     : R-robCompositions
 Version  : 2.0.10
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Summary  : Robust Estimation for Compositional Data
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-robCompositions-lib = %{version}-%{release}
-Requires: R-zCompositions
+Requires: R-DEoptimR
+Requires: R-NADA
+Requires: R-cellranger
+Requires: R-e1071
+Requires: R-forcats
+Requires: R-laeken
+Requires: R-pcaPP
+Requires: R-ranger
+Requires: R-truncnorm
+Requires: R-vcd
+BuildRequires : R-DEoptimR
 BuildRequires : R-GGally
+BuildRequires : R-NADA
 BuildRequires : R-VIM
+BuildRequires : R-cellranger
 BuildRequires : R-cvTools
+BuildRequires : R-e1071
+BuildRequires : R-forcats
 BuildRequires : R-fpc
 BuildRequires : R-kernlab
+BuildRequires : R-laeken
 BuildRequires : R-mclust
+BuildRequires : R-pcaPP
 BuildRequires : R-pls
+BuildRequires : R-ranger
 BuildRequires : R-robustbase
 BuildRequires : R-rrcov
 BuildRequires : R-sROC
+BuildRequires : R-truncnorm
+BuildRequires : R-vcd
 BuildRequires : R-zCompositions
 BuildRequires : buildreq-R
+BuildRequires : texlive
 
 %description
 {robCompositions}
@@ -46,10 +66,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550597684
+export SOURCE_DATE_EPOCH=1552864713
 
 %install
-export SOURCE_DATE_EPOCH=1550597684
+export SOURCE_DATE_EPOCH=1552864713
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -85,8 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library robCompositions|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  robCompositions || :
 
 
 %files
@@ -127,10 +146,10 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/robCompositions/help/robCompositions.rdx
 /usr/lib64/R/library/robCompositions/html/00Index.html
 /usr/lib64/R/library/robCompositions/html/R.css
-/usr/lib64/R/library/robCompositions/libs/symbols.rds
+/usr/lib64/R/library/robCompositions/tests/imp_test.R
+/usr/lib64/R/library/robCompositions/tests/importFood.R
+/usr/lib64/R/library/robCompositions/tests/rz.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/robCompositions/libs/robCompositions.so
-/usr/lib64/R/library/robCompositions/libs/robCompositions.so.avx2
-/usr/lib64/R/library/robCompositions/libs/robCompositions.so.avx512
