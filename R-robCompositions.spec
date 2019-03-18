@@ -4,7 +4,7 @@
 #
 Name     : R-robCompositions
 Version  : 2.0.10
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Summary  : Robust Estimation for Compositional Data
