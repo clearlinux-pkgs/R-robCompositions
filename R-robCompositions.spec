@@ -4,35 +4,33 @@
 #
 Name     : R-robCompositions
 Version  : 2.0.10
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Summary  : Robust Estimation for Compositional Data
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-robCompositions-lib = %{version}-%{release}
-Requires: R-DEoptimR
-Requires: R-NADA
-Requires: R-cellranger
-Requires: R-e1071
-Requires: R-forcats
-Requires: R-laeken
-Requires: R-pcaPP
-Requires: R-ranger
-Requires: R-truncnorm
-Requires: R-vcd
+Requires: R-car
+Requires: R-diptest
+Requires: R-highr
+Requires: R-modeltools
 BuildRequires : R-DEoptimR
 BuildRequires : R-GGally
 BuildRequires : R-NADA
 BuildRequires : R-VIM
+BuildRequires : R-car
 BuildRequires : R-cellranger
 BuildRequires : R-cvTools
+BuildRequires : R-diptest
 BuildRequires : R-e1071
 BuildRequires : R-forcats
 BuildRequires : R-fpc
+BuildRequires : R-highr
 BuildRequires : R-kernlab
 BuildRequires : R-laeken
 BuildRequires : R-mclust
+BuildRequires : R-modeltools
 BuildRequires : R-pcaPP
 BuildRequires : R-pls
 BuildRequires : R-ranger
@@ -66,10 +64,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552864713
+export SOURCE_DATE_EPOCH=1552895268
 
 %install
-export SOURCE_DATE_EPOCH=1552864713
+export SOURCE_DATE_EPOCH=1552895268
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

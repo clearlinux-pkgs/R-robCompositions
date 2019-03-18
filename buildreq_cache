@@ -1,10 +1,14 @@
 2.0.10
 R-DEoptimR
 R-NADA
+R-car
 R-cellranger
+R-diptest
 R-e1071
 R-forcats
+R-highr
 R-laeken
+R-modeltools
 R-pcaPP
 R-ranger
 R-truncnorm
