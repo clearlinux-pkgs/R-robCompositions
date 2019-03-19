@@ -4,42 +4,62 @@
 #
 Name     : R-robCompositions
 Version  : 2.0.10
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.0.10.tar.gz
 Summary  : Robust Estimation for Compositional Data
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-robCompositions-lib = %{version}-%{release}
-Requires: R-car
-Requires: R-diptest
-Requires: R-highr
-Requires: R-modeltools
+Requires: R-Rcpp
+Requires: R-abind
+Requires: R-carData
+Requires: R-data.table
+Requires: R-flexmix
+Requires: R-gtable
+Requires: R-mvtnorm
+Requires: R-prabclus
+Requires: R-rio
+Requires: R-sp
+Requires: R-trimcluster
+Requires: R-zoo
 BuildRequires : R-DEoptimR
 BuildRequires : R-GGally
 BuildRequires : R-NADA
+BuildRequires : R-Rcpp
 BuildRequires : R-VIM
+BuildRequires : R-abind
 BuildRequires : R-car
+BuildRequires : R-carData
 BuildRequires : R-cellranger
 BuildRequires : R-cvTools
+BuildRequires : R-data.table
 BuildRequires : R-diptest
 BuildRequires : R-e1071
+BuildRequires : R-flexmix
 BuildRequires : R-forcats
 BuildRequires : R-fpc
+BuildRequires : R-gtable
 BuildRequires : R-highr
 BuildRequires : R-kernlab
 BuildRequires : R-laeken
 BuildRequires : R-mclust
 BuildRequires : R-modeltools
+BuildRequires : R-mvtnorm
 BuildRequires : R-pcaPP
 BuildRequires : R-pls
+BuildRequires : R-prabclus
 BuildRequires : R-ranger
+BuildRequires : R-rio
 BuildRequires : R-robustbase
 BuildRequires : R-rrcov
 BuildRequires : R-sROC
+BuildRequires : R-sp
+BuildRequires : R-trimcluster
 BuildRequires : R-truncnorm
 BuildRequires : R-vcd
 BuildRequires : R-zCompositions
+BuildRequires : R-zoo
 BuildRequires : buildreq-R
 BuildRequires : texlive
 
@@ -64,10 +84,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552895268
+export SOURCE_DATE_EPOCH=1552960127
 
 %install
-export SOURCE_DATE_EPOCH=1552895268
+export SOURCE_DATE_EPOCH=1552960127
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
