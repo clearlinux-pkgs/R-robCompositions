@@ -1,4 +1,4 @@
-2.0.10
+2.1.0
 R-DEoptimR
 R-NADA
 R-Rcpp
@@ -11,6 +11,7 @@ R-diptest
 R-e1071
 R-flexmix
 R-forcats
+R-glue
 R-gtable
 R-highr
 R-laeken
@@ -21,6 +22,7 @@ R-prabclus
 R-ranger
 R-rio
 R-sp
+R-tidyr
 R-trimcluster
 R-truncnorm
 R-vcd
