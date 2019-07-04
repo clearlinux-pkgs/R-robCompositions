@@ -4,7 +4,7 @@
 #
 Name     : R-robCompositions
 Version  : 2.1.0
-Release  : 26
+Release  : 27
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.1.0.tar.gz
 Summary  : Compositional Data Analysis
@@ -23,8 +23,6 @@ Requires: R-ggplot2
 Requires: R-kernlab
 Requires: R-laeken
 Requires: R-mclust
-Requires: R-mvtnorm
-Requires: R-pcaPP
 Requires: R-pls
 Requires: R-plyr
 Requires: R-ranger
@@ -46,8 +44,6 @@ BuildRequires : R-ggplot2
 BuildRequires : R-kernlab
 BuildRequires : R-laeken
 BuildRequires : R-mclust
-BuildRequires : R-mvtnorm
-BuildRequires : R-pcaPP
 BuildRequires : R-pls
 BuildRequires : R-plyr
 BuildRequires : R-ranger
@@ -86,10 +82,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562205401
+export SOURCE_DATE_EPOCH=1562210615
 
 %install
-export SOURCE_DATE_EPOCH=1562205401
+export SOURCE_DATE_EPOCH=1562210615
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
