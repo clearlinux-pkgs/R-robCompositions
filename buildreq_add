@@ -1,10 +1,2 @@
-R-VIM
-R-robustbase
-R-sROC
-R-mclust
-R-pls
-R-kernlab
-R-GGally
-R-rrcov
-R-fpc
-R-cvTools
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
