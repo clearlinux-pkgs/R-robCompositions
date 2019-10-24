@@ -4,7 +4,7 @@
 #
 Name     : R-robCompositions
 Version  : 2.1.0
-Release  : 29
+Release  : 30
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.1.0.tar.gz
 Summary  : Compositional Data Analysis
@@ -21,16 +21,12 @@ Requires: R-e1071
 Requires: R-fpc
 Requires: R-ggplot2
 Requires: R-kernlab
-Requires: R-laeken
 Requires: R-mclust
 Requires: R-pls
-Requires: R-plyr
-Requires: R-ranger
 Requires: R-robustbase
 Requires: R-rrcov
 Requires: R-sROC
 Requires: R-tidyr
-Requires: R-vcd
 Requires: R-zCompositions
 BuildRequires : R-GGally
 BuildRequires : R-Rcpp
@@ -54,17 +50,12 @@ BuildRequires : R-tidyr
 BuildRequires : R-vcd
 BuildRequires : R-zCompositions
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
-methods, imputation, methods to replace rounded zeros, (robust) outlier
-    detection for compositional data, (robust) principal component analysis for
-    compositional data, (robust) factor analysis for compositional data, (robust)
-    discriminant analysis for compositional data (Fisher rule), robust regression
-    with compositional predictors and (robust) Anderson-Darling normality tests for
-    compositional data as well as popular log-ratio transformations (addLR, cenLR,
-    isomLR, and their inverse transformations). In addition, visualisation and
-    diagnostic tools are implemented as well as high and low-level plot functions
-    for the ternary diagram.
+{robCompositions}
+=======================================
+Robust Methods for Compositional Data
 
 %package lib
 Summary: lib components for the R-robCompositions package.
@@ -82,10 +73,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562210615
+export SOURCE_DATE_EPOCH=1571894859
 
 %install
-export SOURCE_DATE_EPOCH=1562210615
+export SOURCE_DATE_EPOCH=1571894859
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
