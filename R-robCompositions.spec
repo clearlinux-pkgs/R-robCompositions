@@ -4,7 +4,7 @@
 #
 Name     : R-robCompositions
 Version  : 2.3.1
-Release  : 51
+Release  : 52
 URL      : https://cran.r-project.org/src/contrib/robCompositions_2.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/robCompositions_2.3.1.tar.gz
 Summary  : Compositional Data Analysis
